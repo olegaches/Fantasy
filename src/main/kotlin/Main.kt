@@ -92,8 +92,8 @@ fun ImageGrid() {
                 image = "potter.jpg",
                 startImage = "landish.jpeg",
                 texts = listOf(
-                    "Я - Гарри Поттер, и предлагаю вам испытание \"Передай любовь \". ",
-                    "Вы правы, семья имеет волшебную силу!\n"
+                    "Я - Гарри Поттер, и предлагаю вам испытание \"Передай любовь \".",
+                    "Вы правы, семья имеет волшебную силу!"
                 ),
                 borderColor = Color.White,
             ),
@@ -119,7 +119,7 @@ fun ImageGrid() {
                 image = "zolushka.jpg",
                 startImage = "giacint.jpg",
                 texts = listOf(
-                    "Здравствуйте, друзья. Спойте, пожалуйста, песню  о послушной дочке.\n",
+                    "Здравствуйте, друзья. Спойте, пожалуйста, песню  о послушной дочке.",
                     "Ах, какие трудолюбивые девочки!"
                 ),
                 borderColor = Color.White,
@@ -223,7 +223,7 @@ fun RowScope.ImageItem(
                     }
                     onChangeActive(clickCount != 3)
                 }
-                .border(color = borderColor, width = 3.dp)
+                .border(color = borderColor, width = 1.dp)
         ) {
             if(rotation >= 90f) {
                 Box(
@@ -359,12 +359,12 @@ fun SpeechBubble(text: String, modifier: Modifier) {
                     .animateContentSize(),
                 color = Color.White,
             ) {
-                Box(modifier = Modifier.padding(22.dp)) {
+                Box(modifier = Modifier.padding(15.dp)) {
                     Text(
                         text = text,
-                        lineHeight = 30.sp,
+                        lineHeight = 26.sp,
                         color = Color.Black,
-                        fontSize = 35.sp,
+                        fontSize = 27.sp,
                         fontWeight = FontWeight.Bold,
                     )
                 }
